@@ -1,1 +1,0 @@
-We present a scope-aware, learning-based autonomous red-teaming system that performs black-box security testing on live web applications using adaptive attack strategies under strict legal and safety constraints.
