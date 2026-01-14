@@ -1,9 +1,23 @@
 package model
 
 type ReconResult struct {
-	Domain  string
-	IPs     []string
+	Domain string
+	IPs    []string
+
 	Headers map[string]string
 	Server  string
-	Notes   []string
+
+	TechStack []string
+	WAF       string
+	Security  SecurityPosture
+
+	Notes []string
+}
+
+type SecurityPosture struct {
+	HSTS          bool
+	CSP           bool
+	XFrameOptions bool
+	XContentType  bool
+	CookieFlags   bool
 }
