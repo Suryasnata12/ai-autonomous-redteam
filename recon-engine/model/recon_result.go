@@ -11,7 +11,9 @@ type ReconResult struct {
 	WAF       string
 	Security  SecurityPosture
 
-	Notes []string
+	Notes     []string
+	JSFiles   []string
+	Endpoints []string
 }
 
 type SecurityPosture struct {
