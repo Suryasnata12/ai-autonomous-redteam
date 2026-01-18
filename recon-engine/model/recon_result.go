@@ -14,6 +14,8 @@ type ReconResult struct {
 	Notes     []string
 	JSFiles   []string
 	Endpoints []string
+
+	Auth AuthInfo
 }
 
 type SecurityPosture struct {
@@ -22,4 +24,10 @@ type SecurityPosture struct {
 	XFrameOptions bool
 	XContentType  bool
 	CookieFlags   bool
+}
+type AuthInfo struct {
+	UsesCookies bool
+	UsesJWT     bool
+	HasCSRF     bool
+	AuthHints   []string
 }
