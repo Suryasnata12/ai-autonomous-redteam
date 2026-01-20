@@ -1,0 +1,44 @@
+{
+  "ID": "test-run-1",
+  "Target": "example.com",
+  "Timestamp": "2026-01-20T11:17:59.1449919+05:30",
+  "Recon": {
+    "Domain": "",
+    "IPs": null,
+    "Headers": null,
+    "Server": "",
+    "TechStack": null,
+    "WAF": "",
+    "Security": {
+      "HSTS": false,
+      "CSP": false,
+      "XFrameOptions": false,
+      "XContentType": false,
+      "CookieFlags": false
+    },
+    "Notes": null,
+    "JSFiles": null,
+    "Endpoints": null,
+    "Auth": {
+      "UsesCookies": false,
+      "UsesJWT": false,
+      "HasCSRF": false,
+      "AuthHints": null
+    }
+  },
+  "Reasoning": {
+    "TargetType": "",
+    "RiskLevel": "",
+    "AllowedAttacks": null,
+    "AvoidAttacks": null,
+    "Notes": null
+  },
+  "Plan": {
+    "Target": "",
+    "MaxRequests": 0,
+    "Steps": null,
+    "StopConditions": null
+  },
+  "Outcome": "BLOCKED",
+  "StopReason": "WAF triggered"
+}
