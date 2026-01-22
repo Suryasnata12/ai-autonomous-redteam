@@ -6,13 +6,15 @@ import (
 	recon "ai-autonomous-redteam/recon-engine/model"
 )
 
+// Report is the final consolidated, read-only output
+// exposed to the UI and API.
 type Report struct {
-	Target string
+	Target string `json:"target"`
 
-	Recon     recon.ReconResult
-	Reasoning reason.ReasoningResult
-	Plan      plan.ExploitPlan
+	Recon     recon.ReconResult      `json:"recon"`
+	Reasoning reason.ReasoningResult `json:"reasoning"`
+	Plan      plan.ExploitPlan       `json:"plan"`
 
-	FinalDecision  string
-	DecisionReason string
+	FinalDecision  string `json:"final_decision"`
+	DecisionReason string `json:"decision_reason"`
 }
